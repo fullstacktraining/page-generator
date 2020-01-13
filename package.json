@@ -1,0 +1,20 @@
+{
+  "name": "recording",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "dotenv": "^8.2.0",
+    "faunadb": "^2.10.2",
+    "querystring": "^0.2.0",
+    "shortid": "^2.2.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "node_modules/.bin/eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

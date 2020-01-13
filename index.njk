@@ -1,0 +1,78 @@
+---
+layout: layouts/base.njk
+---
+<script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+<header class="masthead bg-primary text-white text-center">
+  <div class="container d-flex align-items-center flex-column">
+    <h1 class="masthead-heading text-uppercase mb-0">Page Generator</h1>
+    <div class="divider-custom divider-light">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon">
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="divider-custom-line"></div>
+    </div>
+    <p class="masthead-subheading font-weight-light mb-0">Pre-generate your own static page</p>
+  </div>
+</header>
+<section class="page-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <form id="photoUploadForm" novalidate="novalidate" action="new" method="POST">
+          <div class="control-group controls mb-0 pb-2">
+            <div class="">
+              <button type="button" class="btn btn-warning btn-xl" id="photo" type="button">Upload a Photo</button>
+            </div>
+          </div>
+          <hr>
+          <div class="control-group" id="publicIDdiv">
+            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+              <label>Photo Public ID</label>
+              <input class="form-control" type="text" required="required" id="publicIDvalue" readonly="true" name="photo">
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+              <label>Name</label>
+              <input class="form-control" id="name" type="text" placeholder="Name" required="required" name="name">
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+              <label>Email Address</label>
+              <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" name="email">
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+              <label>Role</label>
+              <input class="form-control" id="role" type="text" placeholder="Role" required="required" name="role">
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+              <label>Twitter</label>
+              <input class="form-control" id="twitter" type="text" placeholder="Twitter" required="required" name="twitter">
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+              <label>Facebook</label>
+              <input class="form-control" id="facebook" type="text" placeholder="Facebook" required="required" name="facebook">
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+              <label>LinkedIn</label>
+              <input class="form-control" id="linkedin" type="text" placeholder="LinkedIn" required="required" name="linkedin">
+            </div>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-xl" id="createPage">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
