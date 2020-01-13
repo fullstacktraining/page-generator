@@ -25,9 +25,18 @@ module.exports.handler = async event => {
         page
       )
     );
+    try {
+      await axios.post('https://api.netlify.com/build_hooks/5e1c353a1a247acd66723af7')
+    } catch(error) {
+      console.error('Netlify Build Error', error);
+    }
+
     const response = {
-      statusCode: 200,
-      body: JSON.stringify(queryResponse)
+      statusCode: 302,
+      body: JSON.stringify(queryResponse),
+      headers: {
+        Location: `/mypage/${uniquePath}`
+      }
     }
     return response;
   } catch(error) {
