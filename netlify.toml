@@ -7,3 +7,8 @@
   from = "/new"
   to = "/.netlify/functions/new"
   status = 200
+
+[[redirects]]
+  from = "/mypage/*"
+  to = "/.netlify/functions/display?id=:splat"
+  status = 302
