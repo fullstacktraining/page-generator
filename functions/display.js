@@ -1,4 +1,4 @@
-request('dotenv').config();
+require('dotenv').config();
 const faunadb = require('faunadb');
 const pageTemplate = require('./template.js');
 
