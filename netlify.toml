@@ -12,3 +12,9 @@
   from = "/mypage/*"
   to = "/.netlify/functions/display?id=:splat"
   status = 302
+
+[[redirects]]
+  from = "/*"
+  to = "/notfound.html"
+  force = false
+  status = 404
